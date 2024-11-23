@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GM Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Encabezado con logo y barra de navegación -->
+    <header>
+        <div class="logo">
+            <h1>GM SHOP</h1>
+        </div>
+        <nav>
+            <ul class="nav">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li class="dropdown">
+                    <a href="#">Más</a>
+                    <div class="dropdown-content">
+                        <a href="#">Blog</a>
+                        <a href="#">FAQs</a>
+                        <a href="#">Sobre Nosotros</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Productos Importantes -->
+    <section class="products-section">
+        <h2>Máquinas Destacadas</h2>
+        <div class="product">
+            <img src="images/desmalezadora.png" alt="Producto 1">
+            <p>Desmalezadora</p>
+            <p>$350.000</p>
+            <button>Agregar al carrito</button>
+        </div>
+        <div class="product">
+            <img src="images/motosierra.png" alt="Producto 2">
+            <p>Motosierra</p>
+            <p>$370.000</p>
+            <button>Agregar al carrito</button>
+        </div>
+        <div class="product">
+            <img src="images/hoyadora.png" alt="Producto 3">
+            <p>Hoyadora</p>
+            <p>$260.000</p>
+            <button>Agregar al carrito</button>
+        </div>
+        <!-- Puedes agregar más productos de la misma forma -->
+    </section>
+
+    <!-- Sección de Productos Secundarios -->
+    <section class="products-section">
+        <h2>Repuestos y Accesorios</h2>
+        <!-- Botones de flecha -->
+        <button class="arrow arrow-left" onclick="scrollCarousel(-300)">&#10094;</button>
+        <button class="arrow arrow-right" onclick="scrollCarousel(300)">&#10095;</button>
+
+        <!-- Contenedor del carrusel -->
+        <div class="product-carousel">
+            <div class="product">
+                <img src="images/aceite.png" alt="Aceite">
+                <p>Aceite 2 Tiempos
+                <p>
+                <p>$11.000</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="images/disco circular.png" alt="Disco Circular">
+                <p>Disco Circular</p>
+                <p>$20.000</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="images/cuchilla 3.png" alt="Cuchilla">
+                <p>Cuchilla</p>
+                <p>$9.000</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <!-- Nuevos productos añadidos -->
+
+            <div class="product">
+                <img src="images/Imagen de WhatsApp 2024-11-22 a las 23.00.13_c83e4a55-Photoroom.png" alt="Guantes">
+                <p>Guantes</p>
+                <p>$2.500</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="images/Imagen de WhatsApp 2024-11-22 a las 23.00.13_caece7a2-Photoroom.png"
+                    alt="Aceite Motor">
+                <p>Extractor de Bugia</p>
+                <p>$3.000</p>
+                <button>Agregar al carrito</button>
+            </div>
+
+            <div class="product">
+                <img src="images/Imagen de WhatsApp 2024-11-22 a las 23.00.14_4f731b12-Photoroom.png"
+                    alt="Cinta Métrica">
+                <p>Llave Multiuso</p>
+                <p>$18.000</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="images/Imagen de WhatsApp 2024-11-22 a las 23.05.24_1d590212-Photoroom.png" alt="Palas">
+                <p>Lima para Cadena</p>
+                <p>$4.500</p>
+                <button>Agregar al carrito</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Dirección: Parque Industrial, General Ramirez</p>
+        <p>Email: GMshop@hotmail.com</p>
+        <p>Teléfono: +54 3434153003</p>
+        <a href="https://wa.me/3434153003" target="_blank">
+            <img src="images/Imagen de WhatsApp Photoroom.png" alt="WhatsApp" class="whatsapp-logo">
+        </a>
+    </footer>
+    <script>
+        function scrollCarousel(scrollAmount) {
+            const carousel = document.querySelector('.product-carousel');
+            carousel.scrollBy({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+</body>
+
+</html>
